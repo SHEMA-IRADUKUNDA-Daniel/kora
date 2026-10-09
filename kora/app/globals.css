@@ -1,0 +1,17 @@
+@import url("https://googleapis.com");
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme {
+  --color-background: #ffffff;
+  --color-foreground: #dde2da;
+  --color-heroFooter: #f4f3ed;
+  --color-primary: #142e23;
+  --color-primary2: #182b24;
+  --color-primary3: #65716a;
+  --font-display: "Inter", sans-serif;
+}
