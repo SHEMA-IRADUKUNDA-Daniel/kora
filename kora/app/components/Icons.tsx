@@ -87,7 +87,7 @@ export function DeliveryCarIcon(props: SVGProps<SVGSVGElement>) {
       xmlns="http://w3.org"
       fill="none"
       viewBox="0 0 24 24"
-      strokeWidth="inherit" /* Respects your stroke-2 setup */
+      strokeWidth="inherit"
       stroke="currentColor"
       className={`w-6 h-6 stroke-2 ${props.className || ""}`}
       {...props}
@@ -106,6 +106,84 @@ export function DeliveryCarIcon(props: SVGProps<SVGSVGElement>) {
         strokeLinecap="round"
         strokeLinejoin="round"
         d="M13.5 12h5.25m-5.25 3h5.25"
+      />
+    </svg>
+  );
+}
+
+export function MeasureIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      xmlns="http://w3.org"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth="inherit"
+      stroke="currentColor"
+      className={`w-6 h-6 stroke-2 ${props.className || ""}`}
+      {...props}
+    >
+      {/* Outer bounding block of the ruler tape */}
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M9 3v18m6-18v18M9 3h6m-6 18h6"
+      />
+
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M9 7h4m-4 4h2m-2 4h4m-4 4h2"
+      />
+    </svg>
+  );
+}
+
+export function ReturnIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      xmlns="http://w3.org"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth="inherit"
+      stroke="currentColor"
+      className={`w-6 h-6 stroke-2 ${props.className || ""}`}
+      {...props}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M19.5 12a7.5 7.5 0 0 0-13.5-4.5M6 4.5V7.5H9"
+      />
+
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M4.5 12a7.5 7.5 0 0 0 13.5 4.5M18 19.5V16.5H15"
+      />
+    </svg>
+  );
+}
+
+export function LocationIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      xmlns="http://w3.org"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth="inherit"
+      stroke="currentColor"
+      className={`w-6 h-6 stroke-2 ${props.className || ""}`}
+      {...props}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+      />
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
       />
     </svg>
   );
