@@ -2,6 +2,7 @@
 
 import Button from "./components/common/Button";
 import Navibar from "./components/common/Navbar";
+import Image from "next/image";
 
 import footwear from "../public/footwear.png";
 import layersandrainwear from "../public/layersandrainwear.png";
@@ -11,6 +12,7 @@ import RainJacket from "../public/Mistrainjacket.png";
 import HikingShoes from "../public/RidgedHikingShoes.png";
 import TrekkingPoles from "../public/Trekkingpoles.png";
 import HikingBackpack from "../public/Traildaypack24l.png";
+import Legs from "../public/legs.png";
 import HeroFooter from "./components/common/HeroFooter";
 
 function Home() {
@@ -65,6 +67,20 @@ function Home() {
       detail4: "Room for the whole day.",
     },
   ];
+  const trailCondition = [
+    {
+      id: 1,
+      text: "Volcanoes",
+    },
+    {
+      id: 2,
+      text: "Cool & wet",
+    },
+    {
+      id: 3,
+      text: " 4 essentials",
+    },
+  ];
 
   return (
     <main className="font-display">
@@ -116,6 +132,57 @@ function Home() {
         buttonText="Explore the shop"
         categories={Explore}
       />
+      <div id="kitSection " className="bg-heroFooter">
+        <div className="grid grid-cols-2 items-center">
+          <Image
+            src={Legs}
+            alt="hikingkit"
+            className="w-full h-auto object-cover"
+          />
+
+          <div className=" flex flex-col gap-5 p-10">
+            <h2 className="text-secondary text-xs font-semibold">
+              Built around the trail
+            </h2>
+            <h1 className="text-primary2 text-5xl font-bold leading-tight">
+              Big hills. One thoughtful kit.
+            </h1>
+            <p className="text-primary3 text-lg">
+              Cool starts, muddy paths, sudden rain. The Volcano Hiking Kit
+              brings four essentials together for a day in Rwanda’s highlands.
+            </p>
+
+            <div className="flex gap-4">
+              {trailCondition.map((item) => (
+                <div
+                  key={item.id}
+                  className="bg-foreground text-xs font-semibold rounded-full text-secondary px-4 py-2"
+                >
+                  {item.text}
+                </div>
+              ))}
+            </div>
+
+            <div>
+              <div className="text-2xl font-bold text-primary2">
+                215,000 Rwf
+              </div>
+              <div className="text-sm text-primary3 mt-1">
+                Save 20,000 Rwf compared with buying separately.
+              </div>
+            </div>
+
+            <div className="pt-2">
+              <div className="flex">
+                <Button
+                  buttonName="Discover the volcano kit"
+                  className="bg-secondary text-white text-sm font-semibold px-6 py-3 rounded-md"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   );
 }
