@@ -45,3 +45,10 @@ export interface CategorySectionProps {
   showArrow?: boolean;
   children?: ReactNode;
 }
+export interface StoryCardHome {
+  image: string;
+  eyeBrow: string;
+  storyTtile: string;
+  storyLink: string;
+  className: string;
+}

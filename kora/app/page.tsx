@@ -14,6 +14,7 @@ import TrekkingPoles from "../public/Trekkingpoles.png";
 import HikingBackpack from "../public/Traildaypack24l.png";
 import Legs from "../public/legs.png";
 import HeroFooter from "./components/common/HeroFooter";
+import StoryHomeCards from "./components/common/storyHomeCards";
 
 function Home() {
   const Categories = [
@@ -133,7 +134,7 @@ function Home() {
         categories={Explore}
       />
       <div id="kitSection " className="bg-heroFooter">
-        <div className="grid grid-cols-2 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-0  items-center">
           <Image
             src={Legs}
             alt="hikingkit"
@@ -182,6 +183,9 @@ function Home() {
             </div>
           </div>
         </div>
+      </div>
+      <div id="storySection">
+        <StoryHomeCards />
       </div>
     </main>
   );
